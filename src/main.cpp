@@ -9,6 +9,16 @@
 #include <Wire.h>
 #include <stdlib.h>
 
+///////////////////////////////////////////
+// This is where goes your private info  //
+// This file is not included in the repo //
+// contains:                             //
+// const char* ssid = "xxx";             //
+// const char* password = "xxx";         //
+// const char* mqtt_server = "xxx";      //
+#include "private.h"                     //
+///////////////////////////////////////////
+
 WiFiClient espClient;
 PubSubClient client(espClient);
 TFT_eSPI tft = TFT_eSPI();
